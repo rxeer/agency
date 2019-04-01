@@ -1,0 +1,71 @@
+@import "../../libs/vars";
+@import "../../libs/mixins";
+
+/// Menu block and elements to this block
+.menu {
+
+  &__list {
+    @include list-item-align();
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    font-weight: $base-font-weight;
+    color: $color-menu;
+  }
+
+  &__item {
+    margin-right: $menu-margin-right;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    text-transform: $menu-text-transform;
+    padding: $menu-padding;
+    font-size: $menu-font-size/$base-size + rem;
+    border: 0;
+    color: inherit;
+    display: inline-block;
+    height: inherit;
+    line-height: inherit;
+    outline: 0;
+    background: $menu-bg-item;
+
+    &--underline {
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px transparent;
+      position: relative;
+      overflow: hidden;
+
+      &:after {
+        content: " ";
+        position: absolute;
+        z-index: -1;
+        left: 10px;
+        right: 100%;
+        bottom: 0;
+        background: #fff;
+        height: 2px;
+        -webkit-transition-property: right;
+        transition-property: right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+      }
+
+      &:hover::after {
+        right: 10px;
+      }
+    }
+
+    &:hover {
+      color: $color-menu-hover;
+      background: $menu-bg-item-hover;
+    }
+  }
+}

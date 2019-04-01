@@ -1,0 +1,28 @@
+@import "../../libs/vars";
+@import "../../libs/mixins";
+
+/// Block logo
+
+.logo__link {
+  font-family: $base-font-family;
+  font-weight: $base-font-weight + 300;
+  font-size: 2.3em;
+
+  &:hover {
+    color: #31353e;
+  }
+}
+
+.logo__slogan {
+  display: block;
+  color: $color-logo-slogan;
+  font-size: $slogan-font-size;
+  margin-top: -16px;
+  font-weight: $base-font-weight;
+}
+
+@media all and (max-width: 770px) {
+  .logo {
+    margin: 0 auto;
+  }
+}

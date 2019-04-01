@@ -1,0 +1,106 @@
+/// Base font setting
+$base-size: 16;
+$base-font-size: 1rem;
+$base-font-weight: 500;
+$base-line-height: 30pt;
+$base-font-family: 'Dosis', Arial, sans-serif;
+$alt-font-family: 'Open Sans', Arial, sans-serif;
+$font-size--small: 16px;
+$font-size--large: 16px;
+
+/// Headings
+
+$font-size--h1: 45/$base-size + rem;
+$font-size--h2: 54/$base-size + rem;
+$font-size--h3: 30/$base-size + rem;
+$font-size--h4: 1rem;
+$font-size--h5: 54/$base-size + rem;
+$font-size--h6: 54/$base-size + rem;
+
+// Duration.
+
+$transitions-link: 0.2s;
+
+// Size.
+
+$letter-spacing: 0.075em;
+$letter-spacing-alt: 0.225em;
+$margin-element: 1rem;
+
+// Palette.
+$color-link: #fff;
+$color-text: #3d3d3d;
+$color-heading: #3d3d3d;
+$color-placeholder: #eeeff0;
+$color-heading-hr: #f16522;
+$color-icon: #f16522;
+$color-hr: #e7eaed;
+$color-btn-red: #612316;
+$bg-header: 'bg-header.png';
+$bg-footer: #e7eaed;
+$bg-button-white: #ffffff;
+$bg-button-red: #dd4b2b;
+$bg-button-violet: #4b4e73;
+$bg-button-dark: #363636;
+$bg-button-dark-hover: #6c6c6c;
+
+/// Logo component
+
+$color-logo-slogan: #dd4b2b;
+$slogan-font-size: 1.1rem;
+
+/// Menu component
+
+$list-margin: 0;
+$color-menu: #fff;
+$color-menu-hover: #ededed;
+$menu-bg-item: transparent;
+$menu-bg-item-hover: transparent;
+$menu-text-transform: uppercase;
+$menu-line-height: inherit;
+$menu-font-size: 12;
+$menu-padding: 0 10px;
+$menu-margin-right: 0;
+
+
+///	block page
+
+$bg-page-header_2: 'bg-header_2.jpg';
+
+/// List component
+
+$list-margin: 0;
+$color-list: #fff;
+
+///Form-submit component
+
+$sbm-position: center;
+$sbm-width: 100%;
+$sbm-height: 40px;
+$sbm-color: #000;
+$sbm-border-radius: none;
+$sbm-padding: 0 60px 0 20px;
+$sbm-bg: #fff;
+
+$sbm-btn-theme: transparent;
+$sbm-btn-theme-hover: transparent;
+$sbm-btn-theme-color-hover: #ba5651;
+
+/// Social component
+$social-margin-left: 20px;
+
+/// Caption component
+$caption-position: left;
+
+/// Feature component
+$ft-margin-bottom: 3rem;
+$ft-heading-font-size: 20px;
+$ft-para-font-size: 16px;
+$ft-heading-padding-top: 50px;
+$ft-para-padding-top: 50px;
+
+///	Block button
+
+$border-radius: 0;
+$btn-padding-top-bottom: 20px;
+$btn-padding-left-right: 30px;

@@ -1,0 +1,16 @@
+@import "../libs/vars";
+@import "../libs/mixins";
+
+///Block List
+/// {@list-margin} margins for list block
+/// {@color-list} identify color
+
+.list {
+  margin: $list-margin;
+  color: $color-list;
+  list-style: none;
+
+  & li {
+
+  }
+}

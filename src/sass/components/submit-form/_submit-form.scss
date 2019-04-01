@@ -1,0 +1,45 @@
+@import "../../libs/vars";
+@import "../../libs/mixins";
+@import "../input";
+
+
+.submit-form {
+  text-align: $sbm-position;
+  position: relative;
+
+  &__input {
+    display: inline-block;
+    width: $sbm-width;
+    height: $sbm-height;
+    padding: $sbm-padding;
+    background-color: $sbm-bg;
+    border: 0;
+    outline: none;
+    margin-right: -5px;
+    color: #000;
+    font-size: inherit;
+    font-weight: normal;
+    vertical-align: middle;
+    border-radius: $sbm-border-radius;
+  }
+
+  &__btn {
+    font-size: inherit;
+    height: $sbm-height;
+    background: $sbm-btn-theme;
+    line-height: 0;
+    border: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    outline: none !important;
+
+    &:hover {
+      background: $sbm-btn-theme-hover;
+      color: $sbm-btn-theme-color-hover;
+      cursor: pointer;
+    }
+  }
+}
+
+

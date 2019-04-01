@@ -1,0 +1,52 @@
+
+.icon {
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    text-align: center;
+    flex: 1 1 50%;
+    padding: 100px 0 3rem 0;
+    letter-spacing: 0;
+
+    &:nth-child(odd) {
+      border-left: 1px solid #e7eaed;
+      border-bottom: 1px solid #e7eaed;
+    }
+
+    &:nth-child(even) {
+      border-left: 1px solid #e7eaed;
+      border-right: 1px solid #e7eaed;
+      border-bottom: 1px solid #e7eaed;
+    }
+
+    &:last-child, &:nth-last-child(2){
+      border-bottom: none;
+    }
+
+    & img {
+      margin-bottom: 2rem;
+      height: 62px;
+    }
+    
+    @media all and (max-width: 992px) {
+      &:first-child, &:nth-child(2) {
+        border-top: 1px solid #e7eaed;
+      }
+    }
+
+    @media all and (max-width: 450px) {
+      & {
+        flex-basis: 100%;
+        border: 1px solid #e7eaed;
+      }
+    }
+  }
+}

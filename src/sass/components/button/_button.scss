@@ -1,0 +1,74 @@
+@import "../../libs/vars";
+@import "../../libs/mixins";
+
+.button {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 13/16 + rem;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  letter-spacing: 3px;
+  vertical-align: middle;
+  user-select: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding: $btn-padding-top-bottom $btn-padding-left-right;
+  border-radius: $border-radius;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    background: #ccc;
+    color: #f8f8f8;
+  }
+
+  @media all and (max-width: 440px){
+    & {
+      width: 100%;
+    }
+  }
+
+}
+
+/// Modifiers
+
+.button--theme-white {
+  background: $bg-button-white;
+}
+
+.button--theme-red {
+  background: $bg-button-red;
+  
+  &:hover {
+    background: #a3513f;
+  }
+}
+
+.button--theme-violet {
+  background: $bg-button-violet;
+
+  &:hover {
+    background: #767bb3;
+  }
+}
+
+.button--theme-dark {
+  background: $bg-button-dark;
+
+  &:hover {
+    background: $bg-button-dark-hover;
+  }
+}
+
+
+.button__icon {
+
+}
+
+.button__text {
+
+}
