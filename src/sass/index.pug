@@ -1,0 +1,22 @@
+-
+mixin feature(headingAs, className, contentHeading, contentP)
+    .feature(class=`${className}`)
+        img(src="" alt="" title="")
+        #{headingAs}.heading #{contentHeading}
+        p #{contentP}
+mixin  major(as, className, contH, contP)
+    #{as}.heading(class=`${className}`) #{contH}
+    p #{contP}
+
+doctype
+html(lang="en")
+    include layout/_head
+    body.page
+        section.page__header
+            .container
+                include layout/_header
+                section.caption
+                    h1.caption__heading.heading--stripe
+                        span.heading.heading--large Agency
+
+                    p.caption__props Maecenas suscipit imperdiet nisi ac hendrerit. Nam congue felis ac massa rutrum pulvinar. Donec sodales eros sed efficitur mattis. Integer tincidunt, felis a placerat maximus, eros nulla dapibus dui, at facilisis enim odio at velit. Aenean dictum eleifend mi sit amet luctus.

@@ -1,0 +1,47 @@
+@import "../../libs/vars";
+@import "../../libs/mixins";
+
+/// Heading block
+
+.heading {
+  font-family: $base-font-family;
+  display: block;
+}
+
+///  Modifiers
+
+.heading--small {
+  font-size: 0.5em;
+}
+.heading--normal {
+  font-size: 1rem;
+}
+.heading--big {
+  font-size: 40/16 + rem;
+}
+.heading--medium {
+  font-size: 50/16 + rem;
+}
+.heading--large {
+  font-size: 90/16 + rem;
+  line-height: 80px;
+}
+
+.heading--bold {
+  font-weight: 700;
+}
+
+.heading--italic {
+  font-style: italic;
+}
+
+.heading--stripe:after {
+  content: '';
+  height: 5px;
+  border-radius: 2px;
+  width: 74px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: $color-heading-hr;
+  display: block;
+}

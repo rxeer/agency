@@ -1,0 +1,9 @@
+-var icons = ['facebook', 'github'];
+
+//- social icon only for FontAwesome
+
+.social
+    ul.social__list
+        each icon in icons
+            li: a(href="#")
+                i.fa(class=`${icon}`)

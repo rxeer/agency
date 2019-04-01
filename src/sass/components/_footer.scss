@@ -1,0 +1,35 @@
+@import "../libs/vars";
+@import "../libs/mixins";
+@import "list";
+
+/// Block footer
+
+.footer__box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 1;
+  letter-spacing: 0;
+
+  & .box {
+    flex-basis: 25%;
+    @media all and (max-width: 500px){
+      & {
+        flex-basis: 100%;
+      }
+    }
+    & .box__title {
+      font-size: 2rem;
+    }
+  }
+}
+
+.box__link {
+  color: $color-heading-hr;
+  text-transform: uppercase;
+
+  &:hover {
+    text-decoration: underline;
+    color:  $color-heading-hr;
+  }
+}

@@ -1,0 +1,31 @@
+@import "../libs/vars";
+@import "../libs/mixins";
+@import "input";
+/// Form group
+/// @group means tha input this inline button inside
+
+.form-group {
+  position: relative;
+}
+.form-group__btn {
+  color: $color-btn-red;
+  font-weight: 700;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &:hover {
+    background: #d1d1d1;
+    color: $color-btn-red;
+  }
+}
+.form-group__input {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 52px;
+  line-height: 49px;
+  padding: 0 2rem;
+  border: 1px solid rgba(255, 255, 255, .7)
+}

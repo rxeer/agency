@@ -1,0 +1,23 @@
+@import "../libs/vars";
+@import "../libs/mixins";
+
+
+::-webkit-input-placeholder {
+  color: #d1d1d1;
+}
+
+:-moz-placeholder {
+  color: #d1d1d1;
+}
+
+::-moz-placeholder {
+  color: #d1d1d1;
+}
+
+:-ms-input-placeholder {
+  color: #d1d1d1;
+}
+
+.input{
+  color: inherit;
+}

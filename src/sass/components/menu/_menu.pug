@@ -1,0 +1,5 @@
+-var menuItem = ['Home', 'Works', 'Industries', 'Services', 'News', 'Who we are', 'Contact']
+    nav.menu
+        ul.menu__list
+            each item in menuItem
+                li.menu__item.menu__link--underline: a.menu__link(href="#") #{item}
